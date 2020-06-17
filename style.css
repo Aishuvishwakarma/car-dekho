@@ -1,0 +1,229 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#back{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    background-color: #ffffff;
+}
+nav{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px 5px #4b4a4a4b;
+    z-index: 111;
+}
+nav #logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding: 0 30px;
+    border-bottom: 1px solid #e3e3e3;
+}
+#logo #img{
+display: flex;
+align-items: center;
+    width: 250px;
+    height: 80px;
+}
+#logo #img img{
+    width: 50px;
+    height: 45px;
+}
+#logo #img h4{
+    margin-left: 5px;
+color: #ffb350;
+}
+#searchBar{
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 80px;
+}
+#searchBar #Search{
+    width:340px ;
+    height: 35px;
+background-color: rgb(66, 66, 66);
+border-radius: 8px;
+}
+#searchBar #Search i{
+   color: #f2f2f2;
+   margin-left: 4px;
+}
+#searchBar #Search input{
+    width:300px ;
+    height: 35px; 
+    border: 1px solid rgb(66, 66, 66);
+    outline: none;
+    border-top-left-radius: 8px;
+    padding: 0 10px;
+    }
+    #searchBar #Search input::placeholder{
+        color: #dbd9d9;
+        font-weight: 500;
+letter-spacing: 1px;
+        }
+nav #findCar{
+    width: 100%;
+    height: 70px;
+}
+#RegAndLog{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    height: 80px;
+    padding: 0 5px;
+}
+#RegAndLog select{
+width: 100px;
+height: 30px;
+border-radius: 3px;
+border: 1px solid #c2c1c1;
+outline: none;
+}
+#RegAndLog select option{
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #c2c1c1;
+    outline: none;
+    }
+    #RegAndLog a{
+        text-decoration: none;
+            }
+    #RegAndLog a h4{
+font-size: 16px;
+font-weight: 500;
+color: #8d8d8d;
+    }
+#linksOfcar{
+    width: 60%;
+    height:70px ;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 30px;
+}
+#linksOfcar a{
+text-decoration: none;
+font-size: 14px;
+text-transform: uppercase;
+color: #909090;
+font-weight: 380;
+}
+#linksOfcar a:hover{
+   color: #ffb350;
+    }
+#linksOfcar a:hover ul li{
+    display: block;
+    transition: .5s;
+    }
+    #linksOfcar a:hover ul{
+        margin-top:0;
+        transition: .5s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+        }
+#linksOfcar a ul{
+ position: absolute;
+ z-index: 222;
+}
+#linksOfcar a ul li{
+display: none;
+width: 250px;
+height: 50px;
+background-color: #fff;
+padding: 18px 15px;
+border-bottom: 1px solid #c2c1c1;
+font-weight: 400;
+transition: .5s cubic-bezier(0.19, 1, 0.22, 1);
+color: #909090;
+    }
+    #linksOfcar a ul li:hover{
+background-color: #f2f2f2;
+transition: .5s;
+ }
+.MostSearchCar{
+width: 95%;
+height: 800px;
+padding:12px;
+margin:25px auto;
+}
+.MostCarDiv{
+width: 100%;
+height: 380px;
+margin-top: 50px;
+}
+.MostSearchCar .MostCarDiv h4{
+    font-size: 25px;
+  font-weight: 500;
+  color: black;
+  opacity: .7;
+  letter-spacing: 1px;
+  }
+.latestCar{
+    width: 98%;
+    height: 310px;
+    margin: 10px auto;
+    padding:15px
+}
+.latestCar .RowDiv{
+    margin-top: 10px;
+display: flex;
+justify-content: space-between;
+}
+.latestCar  .RowDiv .cars{
+    width: 280px;
+    height: 100%;
+}
+.latestCar  .RowDiv .cars img{
+    width: 280px;
+    height: 180px;
+}
+.latestCar  .RowDiv .cars p{
+    font-size: 15px;
+    margin: 10px 0;
+}
+.latestCar  .RowDiv .cars button{
+    width: 250px;
+height: 28px;
+color: #ffb350;
+border-radius: 3px;
+outline: none;
+border: 1px solid #ffb350;
+        }
+.latestCar  .RowDiv .cars button:hover{
+background-color: #ffb350;
+color: #fff; 
+}
+#footer{
+    display: flex;
+    justify-content: space-between;
+   width: 100%;
+   height: 300px;
+   padding: 20px;
+}
+.details{
+  width: 200px;
+  height: 100%; 
+}
+.details h2{
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(32, 32, 32, 0.726);
+  }
+  .details p{
+    font-size: 10px;
+    font-weight: 600;
+    color: rgba(32, 32, 32, 0.5);
+    margin-top: 20px;
+  }
